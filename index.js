@@ -12,7 +12,9 @@ function evaluateFileGroupsViaFolders(options) {
     const getFileBaseNameFrom = pathTool.basename;
 
 
-    const logger = require('@wulechuan/colorful-log');
+    const logger = require('@wulechuan/colorful-log').createColorfulLogger(global.console, {
+        prefix: 'Group files via folder names'
+    });
     const formatJSON = logger.formatJSON;
 
     const colorfulLog = logger.log;

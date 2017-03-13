@@ -1,6 +1,6 @@
 {
   "name": "@wulechuan/group-files-via-folder-names",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Concatenate files under folders that are using special folder name.",
   "main": "index.js",
   "scripts": {
