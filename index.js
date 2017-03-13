@@ -1,13 +1,14 @@
 module.exports = evaluateFileGroupsViaFolders;
 
 function evaluateFileGroupsViaFolders(options) {
-    const moduleCaption = 'folders-as-a-module';
+    const moduleCaption = 'group-files-via-folder-names';
     const moduleCaption2 = moduleCaption + ': ';
     const defaultFolderMatchingPattern = 'concat-into=*';
 
 
     const getFlattenArray = require('array-flatten');
     const pathTool = require('path');
+    const resolveGlob = require('resolve-glob');
     const getFileBaseNameFrom = pathTool.basename;
 
 
